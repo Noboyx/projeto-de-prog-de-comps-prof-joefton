@@ -5,9 +5,9 @@ def carregar_saldo():
         with open(ARQUIVO_SALDO, "r") as arquivo:
             return float(arquivo.read())
     except FileNotFoundError:
-        return 0.0  # saldo inicial se o arquivo não existir
+        return 0.0  
     except ValueError:
-        return 0.0  # caso o conteúdo esteja corrompido
+        return 0.0  
 
 def salvar_saldo(saldo):
     with open(ARQUIVO_SALDO, "w") as arquivo:
@@ -68,6 +68,7 @@ def executar_controle_de_saldo():
             print("Saindo...")
             break
         else:
+            #Fim do trabalho
             print("Opção inválida.")
 
 # Iniciar
