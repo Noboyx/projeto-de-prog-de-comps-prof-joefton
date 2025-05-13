@@ -27,4 +27,7 @@ configuraçao dos menus atribuindo funcionalidades
 encerramento do programa
 atualizaçoes do programa!!! 
 
+# link do video com breve explicaçao no youtube 
+ Clique no link ao lado: https://youtu.be/L03K0TFuA5s
+
 
