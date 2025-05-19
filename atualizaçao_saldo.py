@@ -5,9 +5,9 @@ def carregar_saldo():
         with open(ARQUIVO_SALDO, "r") as arquivo:
             return float(arquivo.read())
     except FileNotFoundError:
-        return 0.0  
+        return 0.0  # Se o arquivo não for achado o retorno do saldo inicial será 0
     except ValueError:
-        return 0.0  
+        return 0.0  # Caso o conteúdo esteja corrompido o retorno do saldo inicial 0 
 
 def salvar_saldo(saldo):
     with open(ARQUIVO_SALDO, "w") as arquivo:
@@ -16,9 +16,9 @@ def salvar_saldo(saldo):
 def ver_saldo(saldo):
     print(f"Saldo atual: R$ {saldo:.2f}")
 
-def depositar(saldo):
+def depositar(saldo): # Ao depositar vai mostrar o novo saldo
     try:
-        valor = float(input("Digite o valor para depósito: R$ "))
+        valor = float(input("Digite o valor para depósito: R$ ")) 
         if valor > 0:
             saldo += valor
             salvar_saldo(saldo)
@@ -29,7 +29,7 @@ def depositar(saldo):
         print("Entrada inválida.")
     return saldo
 
-def sacar(saldo):
+def sacar(saldo): # Ao sacar vai mostrar o novo saldo depois do seu saque
     try:
         valor = float(input("Digite o valor para saque: R$ "))
         if valor > saldo:
@@ -44,7 +44,7 @@ def sacar(saldo):
         print("Entrada inválida.")
     return saldo
 
-def mostrar_menu():
+def mostrar_menu(): # Menu de operações para o caixa eletonico
     print("\n=== MENU SALDO ===")
     print("1 - Ver saldo")
     print("2 - Depositar")
