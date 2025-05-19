@@ -1,6 +1,6 @@
 # 💰 Simulador de Caixa Eletrônico
 
-DUPLA: Joao pedro cruz da camara(41819331)/ Lucas vasconcelos 
+DUPLA: Joao pedro cruz da camara(41819331)/ Lucas Vasconcelos Gomes - RGM:42348510
 
 Projeto prático de programaçao de computadores PROF:jeofton — desenvolvido 100% em Python  usando so paradigma proceudural
 
